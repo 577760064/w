@@ -1,0 +1,11 @@
+{
+	"describe":"This is demo registration center",
+	"serviceInfos":[{
+		"serviceId":"testUserResetService",
+		"serviceName":"testUserResetService",
+		"hostName":"localhost",
+		"port":"21341",
+		"path":"/test/v1"
+	}
+	]
+}

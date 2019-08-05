@@ -1,0 +1,15 @@
+[
+  {
+    "processName": "aqs2-service-applitionService",
+    "command":"aqs2-service -Xms128m -Xmx256m  -jar aqs2-service-application-1.0-SNAPSHOT-executable.jar",
+    "cwd": "/root/home/aqs2-services",
+    "wait":5,
+    "detectors":[]
+  },{
+  "processName": "aqs2-web-ui-applitionService",
+  "command": "aqs2-web -jar -Xms128m -Xmx256m -jar aqs2-web-ui-executable.jar",
+  "cwd": "/root/home/aqs2-services",
+  "wait":1,
+  "detectors":[]
+}
+]

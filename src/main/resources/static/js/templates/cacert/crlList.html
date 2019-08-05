@@ -1,0 +1,17 @@
+<thead>
+<tr>
+    <th>{{thServertype}}</th>
+    <th>{{thLdapDn}}</th>
+    <th>{{thUrl}}</th>
+    <th>{{thOperate}}</th>
+</tr>
+</thead>
+{{each crlList crlItem}}
+<tr>
+    <td>{{crlItem.downloadType}}</td>
+    <td>{{crlItem.ldapUserdn}}</td>
+    <td>{{crlItem.url}}</td>
+    <td><a class="btn btn-xs btn-primary delCrl" data-bind-id="{{crlItem.id}}">
+        <i class="fa fa-del"></i>{{delBtn}}</a></td>
+</tr>
+{{/each}}

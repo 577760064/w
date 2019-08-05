@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script th:src="@{/js/jquery.js}"></script>
+    <script>
+        function test(){
+            alert(1);
+            $.ajax({
+                url: "/api/testUserResetService/test/v1/search",
+                type: "POST",
+                dataType: 'json',
+                async: false
+            }).done(function (data) {
+                if(data.code != "0"){
+                    //ifhaveOrg = "1";//不含注册分中心
+                }else {
+                }
+            })
+        }
+
+    </script>
+</head>
+<body onload="test()">
+
+welcome monitor webui
+</body>
+</html>
